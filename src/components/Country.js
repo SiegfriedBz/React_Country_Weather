@@ -2,7 +2,6 @@ const Country = (props) => {
     const { selectedCountry: country, capitalWeather: weather } = props
 
     if(!country) return null
-    console.log(country)
 
     return (
         <div className="card w-100">

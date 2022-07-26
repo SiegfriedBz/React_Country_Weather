@@ -3,7 +3,6 @@ import NavBar from "./components/NavBar"
 import CountriesList from "./components/CountriesList"
 import Country from "./components/Country"
 
-
 function App() {
   const [allCountries, setAllCountries] = useState([])
   const [userInput, setUserInput] = useState("")
@@ -74,7 +73,6 @@ function App() {
       console.log(w)
     })
   }
-
 
   return (
     <>

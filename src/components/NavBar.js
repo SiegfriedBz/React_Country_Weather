@@ -16,7 +16,6 @@ const NavBar = ({setUserInput}) => {
             </div>
         </nav>
     )
-
 }
 
 export default NavBar

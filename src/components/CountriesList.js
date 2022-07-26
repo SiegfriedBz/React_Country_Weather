@@ -25,8 +25,3 @@ const CountriesList = (props) => {
 }
 
 export default CountriesList
-
-
-
-
-
