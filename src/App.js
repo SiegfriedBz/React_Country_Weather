@@ -12,7 +12,7 @@ function App() {
   const [capitalWeather, setCapitalWeather] = useState([])
 
   const COUNTRY_BASE_URL = "https://restcountries.com/v3.1"
-  const OPEN_WEATHER_API_KEY = process.env.REACT_APP_OPEN_WEATHER_API_KEY
+  const WEATHER_API_KEY = process.env.REACT_APP_API_KEY
 
   useEffect(() => {
     fetchAllCountries()
@@ -53,7 +53,7 @@ function App() {
     console.log('fetch weather')
     const DAYS = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"]
     const [lat, long] = selectedCountry.capitalInfo.latlng
-    const OPEN_WEATHER_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&appid=53d920c29a5b6fe3c84ba2c5d37ab71d`
+    const OPEN_WEATHER_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&appid=${WEATHER_API_KEY}`
     const response = await fetch(OPEN_WEATHER_URL)
     const data = await response.json()
 
