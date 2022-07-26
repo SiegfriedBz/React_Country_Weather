@@ -49,7 +49,6 @@ function App() {
   }
 
   const fetchCapitalWeather = async() => {
-    console.log('fetch weather')
     const DAYS = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"]
     const [lat, long] = selectedCountry.capitalInfo.latlng
     const OPEN_WEATHER_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&appid=${WEATHER_API_KEY}`
@@ -65,13 +64,6 @@ function App() {
     })
 
     setCapitalWeather([daysData[0], daysData[7], daysData[15], daysData[23], daysData[31]])
-  }
-
-  console.log(selectedCountry)
-  if(capitalWeather) {
-    capitalWeather.map(w => {
-      console.log(w)
-    })
   }
 
   return (

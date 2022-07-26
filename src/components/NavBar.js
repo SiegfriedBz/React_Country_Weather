@@ -1,7 +1,7 @@
 const NavBar = ({setUserInput}) => {
     
     return (
-        <nav className="navbar bg-light">
+        <nav className="navbar" style={{backgroundColor: "#e3f2fd"}}>
             <div className="container-fluid">
                 <a className="navbar-brand">Country Weather</a>
                 <span className="d-flex" role="search">
