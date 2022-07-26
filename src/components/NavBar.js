@@ -19,8 +19,3 @@ const NavBar = ({setUserInput}) => {
 }
 
 export default NavBar
-
-
-
-
-
